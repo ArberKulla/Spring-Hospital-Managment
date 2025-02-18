@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Update Form</title>
+    <link rel="stylesheet" href="/patients/css/edit-patient.css" />
+</head>
+<body>
+<h2>Patient Update Form</h2>
+<a th:href="@{/patients}">Back to list</a>
+<form id ="editPatientForm">
+    <label for="name">First Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="birthDate">Age:</label>
+    <input type="date" id="birthDate" name="birthDate" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/patients/js/edit-patient.js"></script>
+</body>
+</html>

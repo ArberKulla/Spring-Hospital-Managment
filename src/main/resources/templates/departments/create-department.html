@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Registration Form</title>
+    <link rel="stylesheet" href="/departments/css/create-department.css" />
+</head>
+<body>
+<h2>Department Registration Form</h2>
+<a th:href="@{/departments}">Back to list</a>
+<form id="createDepartmentForm">
+    <label for="code">Code:</label>
+    <input type="text" id="code" name="code" required>
+
+    <label for="name">Department Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <button type="submit">Submit</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/departments/js/create-department.js"></script>
+</body>
+</html>

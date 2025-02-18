@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="/admission-state/css/edit-department.css" />
+</head>
+<body>
+<h2>Department Move</h2>
+<a id="backToList">Back to list</a>
+<form id="editAdmissionStateForm">
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+        <option value="">Select a department</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/admission-state/js/edit-department.js"></script>
+</body>
+</html>

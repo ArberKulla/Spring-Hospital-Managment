@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/home/css/home.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome</h1>
+    <a th:href="@{patients}" class="btn">Patients</a>
+    <a th:href="@{departments}" class="btn">Departments</a>
+</div>
+
+</body>
+</html>

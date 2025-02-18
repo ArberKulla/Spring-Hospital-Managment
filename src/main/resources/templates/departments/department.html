@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department List</title>
+    <style></style>
+</head>
+<body>
+<div class="container">
+    <a th:href="@{/home}">Home</a>
+    <a th:href="@{departments/create-department}">New Department</a>
+    <link rel="stylesheet" href="/departments/css/department.css" />
+    <h1>Department List</h1>
+    <div>
+        <input type="text" id="searchByCode" placeholder="Search by Code" />
+        <button onclick="searchDepartmentsCode()">Search</button>
+    <input type="text" id="searchByName" placeholder="Search by Name" />
+    <button onclick="searchDepartmentsName()">Search</button>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody  id="departmentsTable">
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/departments/js/department.js"></script>
+</body>
+</html>

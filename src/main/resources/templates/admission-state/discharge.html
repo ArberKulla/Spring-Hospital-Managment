@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="/admission-state/css/discharge.css" />
+</head>
+<body>
+<h2>Discharge Patient</h2>
+<a id="backToList">Back to list</a>
+<form id="dischargeForm">
+    <label for="dischargeReason">Discharge Reason:</label>
+    <select id="dischargeReason" name="dischargeReason" required>
+        <option value="">Select a discharge reason</option>
+    </select>
+
+    <label for="reason">Reason:</label>
+    <input type="text" id="reason" name="reason" required>
+
+    <button type="submit">Submit</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/admission-state/js/discharge.js"></script>
+</body>
+</html>

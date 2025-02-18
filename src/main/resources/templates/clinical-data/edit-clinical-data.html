@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Update Form</title>
+    <link rel="stylesheet" href="/clinical-data/css/edit-clinicalData.css" />
+</head>
+<body>
+<h2>Clinical Record Update Form</h2>
+<a id="patientLink">Back</a>
+<form id ="editClinicalData">
+    <label for="clinicalRecord">Clinical Record</label>
+    <input type="text" id="clinicalRecord" name="clinicalRecord" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/clinical-data/js/edit-clinicalData.js"></script>
+</body>
+</html>
